@@ -1,0 +1,13 @@
+---
+import BlogIndex from "@components/BlogIndex.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { copy } from "@lib/i18n";
+import { getPosts } from "@lib/posts";
+
+const lang = "en";
+const posts = await getPosts(lang);
+---
+
+<BaseLayout title={copy[lang].latestPosts} description={copy[lang].siteDescription} lang={lang}>
+  <BlogIndex lang={lang} posts={posts} />
+</BaseLayout>

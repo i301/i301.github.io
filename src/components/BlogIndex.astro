@@ -1,0 +1,56 @@
+---
+import { copy, type Lang } from "@lib/i18n";
+import type { Post } from "@lib/posts";
+import PostCard from "./PostCard.astro";
+
+interface Props {
+  lang: Lang;
+  posts: Post[];
+}
+
+const { lang, posts } = Astro.props;
+const t = copy[lang];
+const categories = Array.from(new Set(posts.map((post) => post.data.category)));
+const tags = Array.from(new Set(posts.flatMap((post) => post.data.tags)));
+---
+
+<section class="page-heading">
+  <div>
+    <p class="eyebrow">{t.archive}</p>
+    <h1>{t.latestPosts}</h1>
+  </div>
+  <p>{t.siteDescription}</p>
+</section>
+
+<div class="index-shell">
+  <aside class="index-aside" aria-label={t.archive}>
+    <dl class="site-stats">
+      <div>
+        <dt>{t.allPosts}</dt>
+        <dd>{posts.length}</dd>
+      </div>
+      <div>
+        <dt>{t.categories}</dt>
+        <dd>{categories.length}</dd>
+      </div>
+      <div>
+        <dt>{t.tags}</dt>
+        <dd>{tags.length}</dd>
+      </div>
+    </dl>
+    <div class="aside-links">
+      <a href="/tags/">{t.tags}</a>
+      <a href="/categories/">{t.categories}</a>
+    </div>
+  </aside>
+
+  <section class="post-list" aria-label={t.latestPosts}>
+    {
+      posts.length > 0 ? (
+        posts.map((post, index) => <PostCard post={post} lang={lang} index={index + 1} />)
+      ) : (
+        <p>{t.noPosts}</p>
+      )
+    }
+  </section>
+</div>

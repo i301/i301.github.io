@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getTags } from "@lib/posts";
+
+const tags = await getTags();
+---
+
+<BaseLayout title="Tags" description="Browse posts by tag." lang="zh">
+  <section class="page-heading">
+    <p class="eyebrow">Browse</p>
+    <h1>Tags / 标签</h1>
+    <p>Browse all published tags across Chinese and English posts.</p>
+  </section>
+  <section class="term-grid">
+    {tags.map((tag) => <a href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>)}
+  </section>
+</BaseLayout>

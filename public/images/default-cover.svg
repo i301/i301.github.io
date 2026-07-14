@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial blog cover</title>
+  <desc id="desc">A restrained editorial cover for the bilingual notes site.</desc>
+  <rect width="1200" height="675" fill="#fffdf8"/>
+  <path d="M0 0h1200v675H0z" fill="#f5f2eb"/>
+  <path d="M170 96h860v483H170z" fill="#fffdf8" stroke="#d8d0c2" stroke-width="2"/>
+  <path d="M232 159h352v36H232z" fill="#191815"/>
+  <path d="M232 229h512v12H232z" fill="#a69f92"/>
+  <path d="M232 262h410v12H232z" fill="#c8bdab"/>
+  <path d="M232 295h468v12H232z" fill="#c8bdab"/>
+  <path d="M232 446h144v42H232z" fill="#246b5f"/>
+  <path d="M793 154h205v338H793z" fill="#f1e0d4"/>
+  <path d="M823 184h145v278H823z" fill="none" stroke="#9f4d2e" stroke-width="2"/>
+  <path d="M793 492h205v1H793z" stroke="#9f4d2e" stroke-width="2"/>
+  <path d="M170 579h860" stroke="#d8d0c2" stroke-width="2"/>
+  <path d="M1030 96v483" stroke="#d8d0c2" stroke-width="2"/>
+  <path d="M170 96v483" stroke="#d8d0c2" stroke-width="2"/>
+</svg>

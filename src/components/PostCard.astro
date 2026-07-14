@@ -1,0 +1,44 @@
+---
+import { copy, formatDate, type Lang } from "@lib/i18n";
+import { getPostUrl, type Post } from "@lib/posts";
+
+interface Props {
+  post: Post;
+  lang: Lang;
+  index?: number;
+}
+
+const { post, lang, index } = Astro.props;
+const t = copy[lang];
+---
+
+<article class="post-card">
+  <div class="post-card__body">
+    <div class="post-card__topline">
+      {index && <span class="post-number">{String(index).padStart(2, "0")}</span>}
+      <div class="post-card__signals">
+        <span>{post.data.category}</span>
+        <span class="lang-chip">{post.data.lang.toUpperCase()}</span>
+      </div>
+    </div>
+    <p class="post-meta">
+      <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date, lang)}</time>
+      {post.data.draft && <span class="draft-badge">Draft</span>}
+    </p>
+    <h2><a href={getPostUrl(post)}>{post.data.title}</a></h2>
+    <p>{post.data.description}</p>
+    <div class="tag-list" aria-label="Tags">
+      {post.data.tags.map((tag) => <a href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>)}
+    </div>
+    <a class="read-link" href={getPostUrl(post)}>{t.readMore}</a>
+  </div>
+  <a class="post-card__cover" href={getPostUrl(post)} aria-label={post.data.title}>
+    {
+      typeof post.data.cover === "string" ? (
+        <img src={post.data.cover} alt="" loading="lazy" />
+      ) : (
+        <div class="post-card__cover-placeholder" aria-hidden="true"></div>
+      )
+    }
+  </a>
+</article>

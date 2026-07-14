@@ -1,0 +1,24 @@
+---
+title: "第一篇文章"
+description: "这个示例展示双语文章、标签、分类和图片工作流的基础结构。"
+date: 2026-07-14
+updated: 2026-07-14
+slug: "hello-blog"
+lang: "zh"
+tags: ["Astro", "GitHub Pages", "写作流"]
+category: "工作流"
+cover: "/images/default-cover.svg"
+draft: false
+---
+
+欢迎来到这个双语博客项目。
+
+以后发布新文章时，在 `src/content/posts/zh/` 创建中文版本，在 `src/content/posts/en/` 创建英文版本，并让两个文件使用同一个 `slug`。
+
+## 图片放在哪里
+
+单篇文章相关图片建议放在 `src/assets/posts/hello-blog/`。公共图片可以放在 `public/images/`，然后直接用 `/images/example.png` 引用。
+
+## 发布流程
+
+本地预览确认后，把改动提交并推送到 GitHub。GitHub Actions 会自动构建 Astro 并发布到 GitHub Pages。

@@ -1,0 +1,24 @@
+---
+title: "Hello Blog"
+description: "This sample shows the basic bilingual post, tag, category, and image workflow."
+date: 2026-07-14
+updated: 2026-07-14
+slug: "hello-blog"
+lang: "en"
+tags: ["Astro", "GitHub Pages", "Writing workflow"]
+category: "Workflow"
+cover: "/images/default-cover.svg"
+draft: false
+---
+
+Welcome to this bilingual blog project.
+
+When publishing a new post, create the Chinese version in `src/content/posts/zh/`, create the English version in `src/content/posts/en/`, and keep the same `slug` in both files.
+
+## Where images go
+
+Post-specific images should live in `src/assets/posts/hello-blog/`. Shared images can live in `public/images/` and be referenced with paths like `/images/example.png`.
+
+## Publishing
+
+Preview locally, commit the changes, and push to GitHub. GitHub Actions will build the Astro site and publish it to GitHub Pages.

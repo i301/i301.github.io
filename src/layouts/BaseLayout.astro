@@ -1,0 +1,50 @@
+---
+import { copy, languages, type Lang } from "@lib/i18n";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: Lang;
+}
+
+const lang = Astro.props.lang ?? "zh";
+const t = copy[lang];
+const title = Astro.props.title ? `${Astro.props.title} | ${t.siteTitle}` : t.siteTitle;
+const description = Astro.props.description ?? t.siteDescription;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={`/${lang}/`} aria-label={t.siteTitle}>
+        <span class="brand-mark" aria-hidden="true"></span>
+        {t.siteTitle}
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href={`/${lang}/`}>{t.allPosts}</a>
+        <a href="/tags/">{t.tags}</a>
+        <a href="/categories/">{t.categories}</a>
+        <span class="language-switch" aria-label={t.language}>
+          {Object.entries(languages).map(([code, label]) => (
+            <a href={`/${code}/`} aria-current={code === lang ? "page" : undefined}>{label}</a>
+          ))}
+        </span>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Powered by Astro. Publish with Markdown, Git, and GitHub Pages.</p>
+    </footer>
+  </body>
+</html>
