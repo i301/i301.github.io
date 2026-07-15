@@ -1,12 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">Photography note cover</title>
-  <desc id="desc">A minimalist photography-inspired cover.</desc>
-  <rect width="1200" height="675" fill="#f5f0e7"/>
-  <rect x="128" y="88" width="944" height="499" rx="10" fill="#fffcf4" stroke="#d7cdbf" stroke-width="2"/>
-  <rect x="196" y="146" width="338" height="383" fill="#e7ddcf"/>
-  <path d="M196 146h338v383H196z" fill="none" stroke="#b9ad9c" stroke-width="2"/>
-  <path d="M228 497 484 178" stroke="#fff8e9" stroke-width="54" stroke-linecap="round" opacity=".82"/>
-  <circle cx="741" cy="328" r="116" fill="none" stroke="#20201c" stroke-width="26"/>
-  <circle cx="741" cy="328" r="36" fill="#20201c"/>
-  <path d="M890 238h96M890 286h64M890 382h118M890 430h74" stroke="#315f58" stroke-width="14" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Window light study</title>
+  <desc id="desc">A monochrome abstract image of window light and shadow.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8e8e8"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#111111" stop-opacity=".82"/>
+      <stop offset=".72" stop-color="#111111" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#111111" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wall)"/>
+  <rect x="178" y="138" width="392" height="724" fill="#111111"/>
+  <rect x="222" y="184" width="128" height="286" fill="#f7f7f7"/>
+  <rect x="398" y="184" width="128" height="286" fill="#f7f7f7"/>
+  <rect x="222" y="530" width="128" height="286" fill="#f7f7f7"/>
+  <rect x="398" y="530" width="128" height="286" fill="#f7f7f7"/>
+  <path d="M570 138 1504 602 1504 862 570 424Z" fill="url(#shadow)"/>
+  <path d="M720 0h880v1000H720z" fill="#ffffff" opacity=".36"/>
 </svg>

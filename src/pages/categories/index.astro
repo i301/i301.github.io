@@ -5,11 +5,11 @@ import { getCategories } from "@lib/posts";
 const categories = await getCategories();
 ---
 
-<BaseLayout title="Categories" description="Browse posts by category." lang="zh">
-  <section class="page-heading">
+<BaseLayout title="Topics" description="Browse AI research notes by topic." lang="zh">
+  <section class="page-heading simple-heading">
     <p class="eyebrow">Browse</p>
-    <h1>Categories / 分类</h1>
-    <p>Browse all published categories across Chinese and English posts.</p>
+    <h1>Topics / 主题</h1>
+    <p>按研究方向浏览已发布的 AI 观察、模型分析与 Agent 工具文章。</p>
   </section>
   <section class="term-grid">
     {categories.map((category) => <a href={`/categories/${encodeURIComponent(category)}/`}>{category}</a>)}

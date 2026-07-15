@@ -1,0 +1,27 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI frontier research cover</title>
+  <desc id="desc">Minimal black and white network map for an AI research article.</desc>
+  <rect width="1600" height="1000" fill="#F7F7F8"/>
+  <rect x="120" y="112" width="1360" height="776" rx="36" fill="#FFFFFF" stroke="#D9D9DE"/>
+  <path d="M240 500H1360" stroke="#111113" stroke-opacity="0.12"/>
+  <path d="M800 220V780" stroke="#111113" stroke-opacity="0.12"/>
+  <circle cx="800" cy="500" r="112" fill="#111113"/>
+  <circle cx="422" cy="328" r="58" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+  <circle cx="1178" cy="328" r="58" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+  <circle cx="486" cy="696" r="58" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+  <circle cx="1114" cy="696" r="58" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+  <path d="M475 352L690 452" stroke="#111113" stroke-width="3"/>
+  <path d="M1125 352L910 452" stroke="#111113" stroke-width="3"/>
+  <path d="M539 672L690 548" stroke="#111113" stroke-width="3"/>
+  <path d="M1061 672L910 548" stroke="#111113" stroke-width="3"/>
+  <path d="M544 328H1056" stroke="#111113" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M544 696H1056" stroke="#111113" stroke-opacity="0.18" stroke-width="2"/>
+  <text x="800" y="486" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700">AI</text>
+  <text x="800" y="548" fill="#FFFFFF" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">FRONTIER</text>
+  <text x="422" y="340" fill="#111113" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="650">OPENAI</text>
+  <text x="1178" y="340" fill="#111113" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="650">GOOGLE</text>
+  <text x="486" y="708" fill="#111113" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="650">CLAUDE</text>
+  <text x="1114" y="708" fill="#111113" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="650">QWEN</text>
+  <path d="M240 816H1360" stroke="#111113" stroke-opacity="0.18"/>
+  <text x="240" y="854" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="24">MODEL LABS / AGENTS / ECOSYSTEMS</text>
+</svg>

@@ -1,6 +1,6 @@
 ---
-import { copy, type Lang } from "@lib/i18n";
-import type { Post } from "@lib/posts";
+import { copy, formatDate, type Lang } from "@lib/i18n";
+import { getPostUrl, type Post } from "@lib/posts";
 import PostCard from "./PostCard.astro";
 
 interface Props {
@@ -10,67 +10,48 @@ interface Props {
 
 const { lang, posts } = Astro.props;
 const t = copy[lang];
-const categories = Array.from(new Set(posts.map((post) => post.data.category)));
-const tags = Array.from(new Set(posts.flatMap((post) => post.data.tags)));
 const featured = posts[0];
 const listPosts = featured ? posts.slice(1) : posts;
 ---
 
-<section class="page-heading">
-  <div>
-    <p class="eyebrow">{t.archive}</p>
-    <h1>{t.latestPosts}</h1>
-  </div>
+<section class="ai-hero" aria-labelledby="home-title">
+  <p class="eyebrow">{t.archive}</p>
+  <h1 id="home-title">{t.latestPosts}</h1>
   <p>{t.siteDescription}</p>
 </section>
 
 {
   featured && (
-    <section class="featured-note" aria-labelledby="featured-title">
-      <div class="featured-note__media">
+    <section class="featured-article" aria-labelledby="featured-title">
+      <a class="featured-article__visual" href={getPostUrl(featured)} aria-label={featured.data.title}>
         {featured.data.cover && <img src={featured.data.cover} alt="" loading="eager" />}
-      </div>
-      <div class="featured-note__content">
-        <p class="eyebrow">{featured.data.category}</p>
+      </a>
+      <div class="featured-article__body">
+        <p class="post-card__meta">
+          <span>{featured.data.category}</span>
+          <time datetime={featured.data.date.toISOString()}>{formatDate(featured.data.date, lang)}</time>
+        </p>
         <h2 id="featured-title">
-          <a href={`/${featured.data.lang}/posts/${featured.data.slug}/`}>{featured.data.title}</a>
+          <a href={getPostUrl(featured)}>{featured.data.title}</a>
         </h2>
         <p>{featured.data.description}</p>
-        <a class="read-link" href={`/${featured.data.lang}/posts/${featured.data.slug}/`}>{t.readMore}</a>
+        <a class="read-link" href={getPostUrl(featured)}>{t.readMore}</a>
       </div>
     </section>
   )
 }
 
-<div class="index-shell">
-  <aside class="index-aside" aria-label={t.archive}>
-    <dl class="site-stats">
-      <div>
-        <dt>{t.allPosts}</dt>
-        <dd>{posts.length}</dd>
-      </div>
-      <div>
-        <dt>{t.categories}</dt>
-        <dd>{categories.length}</dd>
-      </div>
-      <div>
-        <dt>{t.tags}</dt>
-        <dd>{tags.length}</dd>
-      </div>
-    </dl>
-    <div class="aside-links">
-      <a href="/tags/">{t.tags}</a>
-      <a href="/categories/">{t.categories}</a>
-    </div>
-  </aside>
-
-  <section class="post-list" aria-label={t.latestPosts}>
+<section class="article-index" aria-label={t.allPosts}>
+  <div class="section-heading">
+    <p class="eyebrow">{t.allPosts}</p>
+  </div>
+  <div class="post-list">
     {
       listPosts.length > 0 ? (
-        listPosts.map((post, index) => <PostCard post={post} lang={lang} index={index + 1} />)
+        listPosts.map((post) => <PostCard post={post} lang={lang} />)
       ) : (
-        <p>{t.noPosts}</p>
+        <p class="empty-state">{t.noPosts}</p>
       )
     }
-  </section>
-</div>
+  </div>
+</section>

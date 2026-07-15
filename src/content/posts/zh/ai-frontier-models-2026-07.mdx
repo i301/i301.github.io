@@ -1,147 +1,146 @@
 ---
-title: "AI 圈三强新局面：Claude、ChatGPT 与 Google Gemini 的最新动态"
-description: "截至 2026 年 7 月，OpenAI、Anthropic 与 Google 的大模型竞争正在从单纯拼参数和榜单，转向代理能力、成本效率、安全治理与产品落地的综合竞争。"
-date: 2026-07-14
-updated: 2026-07-14
+title: "AI 圈最新动态：大模型竞争正在转向 Agent 系统"
+description: "截至 2026 年 7 月，OpenAI、Anthropic、Google 与国内智谱、Kimi、Qwen 的竞争焦点，正在从单一模型能力转向 Agent、长上下文、工具调用、成本效率和生态入口。"
+date: 2026-07-15
+updated: 2026-07-15
 slug: "ai-frontier-models-2026-07"
 lang: "zh"
-tags: ["AI", "Claude", "ChatGPT", "Gemini", "大模型"]
+tags: ["AI", "OpenAI", "Anthropic", "Google", "智谱", "Kimi", "Qwen", "Agent"]
 category: "AI 观察"
-cover: "/images/default-cover.svg"
-draft: true
+cover: "/images/ai-frontier-cover.svg"
+draft: false
 ---
 
-截至 2026 年 7 月 14 日，AI 圈最值得关注的变化不是某一个模型又在某个榜单上多拿了几分，而是三家头部公司正在同时把大模型推向一个更具体的方向：**从聊天工具，变成能接任务、用工具、跨应用执行工作的智能代理系统**。
+如果只看模型榜单，AI 圈的变化会显得很碎：今天某个模型编码分数提升，明天另一个模型上下文窗口变长，后天又出现新的多模态能力。但把 OpenAI、Anthropic、Google 以及国内智谱、Kimi、Qwen 放在同一张图里看，主线反而很清楚：
 
-OpenAI 的关键词是 ChatGPT Work 和 GPT-5.6，Anthropic 的关键词是 Claude Sonnet 5、Fable 5 与更严格的安全框架，Google 的关键词则是 Gemini 3.5 Flash 的 computer use，以及 Gemini Omni Flash 与 Nano Banana 2 Lite 代表的多模态生产管线。
+**大模型竞争正在从“谁更会回答问题”，转向“谁能更稳定地完成真实工作”。**
 
-这意味着大模型竞争已经进入第二阶段：不是“谁更会回答问题”，而是“谁更能稳定完成工作”。
+这里的真实工作不只是聊天，也包括读文件、写代码、调用工具、浏览网页、控制界面、生成图片视频、维护项目上下文、在长任务中持续决策，并且在成本、权限和安全边界内完成交付。
 
-## 一句话结论
+## 一句话判断
 
-如果把三家公司放在同一张图上看：
+截至 2026 年 7 月 15 日，我会把当前 AI 圈分成三条主线：
 
-- **OpenAI** 在把 ChatGPT 从问答入口升级为办公代理入口。
-- **Anthropic** 在用 Claude 强化企业级编码、工具调用和高风险场景治理。
-- **Google** 在把 Gemini 嵌入搜索、开发者平台、多媒体生成和企业自动化。
+1. **海外头部公司进入 Agent 平台竞争。** OpenAI 把 ChatGPT、Codex、Work、插件和长任务聚合到同一个工作入口；Anthropic 用 Claude Code、Claude 模型和 MCP 继续强化开发者与企业工作流；Google 把 Gemini 模型、Computer Use、媒体生成和托管 Agent 放进开发者平台。
+2. **国内模型公司正在用开放权重和高性价比抢开发者心智。** Qwen3、Kimi K2、GLM 系列都强调长上下文、工具调用、编码、推理和本地/私有化部署。
+3. **真正的护城河从模型参数转向系统能力。** 未来用户不只关心“模型聪不聪明”，而是关心它能不能接入我的资料、理解我的代码库、用我的工具、遵守我的权限、留下可审计记录，并在可接受成本内稳定完成任务。
 
-三家的共同方向很清楚：模型本身仍然重要，但真正的护城河正在转向 **工具生态、工作流入口、安全控制和单位成本**。
+## OpenAI：从 ChatGPT 到 Work / Codex 的统一入口
 
-## OpenAI：ChatGPT 正在从聊天窗口变成工作代理
+OpenAI 最新的公开文档已经把 ChatGPT 与 Codex 放在同一个“从目标到成果”的产品叙事里。官方文档对 Codex/ChatGPT 的定位是：用户从一个目标、想法或任务开始，系统可以收集上下文、采取行动，并产出可用结果。
 
-OpenAI 在 2026 年 7 月 9 日发布了 [GPT-5.6](https://openai.com/index/gpt-5-6/)，并同时推出 [ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work/)。这是一个很明显的信号：OpenAI 不再只把 ChatGPT 定位成“更聪明的对话助手”，而是要把它变成一个能跨应用、跨文件、跨任务执行的工作代理。
+这代表 OpenAI 的重点不再只是模型本身，而是一个面向工作流的入口：
 
-GPT-5.6 被拆成三个层级：Sol、Terra、Luna。Sol 是旗舰模型，Terra 面向日常工作，Luna 主打成本效率。这个分层很关键，因为它说明 OpenAI 已经意识到：真实用户不只需要最强模型，也需要“足够强但更便宜、更快”的模型。
+- ChatGPT 仍然是最高频的人机对话入口。
+- Codex 是面向代码库、任务、PR、插件和开发流程的执行入口。
+- Work 把文件、插件、权限、长任务和可交付成果放到更广的知识工作场景里。
+- GPT-5.6 系列在官方文档中被拆成不同能力/成本档位，说明 OpenAI 希望用户按任务复杂度选择模型，而不是永远调用最贵、最强的模型。
 
-ChatGPT Work 的核心变化有三点：
+这背后的产品逻辑很现实：当 AI 从“问答”进入“执行”，一次任务可能会调用模型数十次甚至上百次。此时，模型智力、延迟、价格、上下文管理和权限控制都必须一起优化。
 
-1. **从回答问题到交付结果**  
-   它可以围绕一个目标拆解步骤，生成文档、表格、幻灯片、网页应用等成品，而不是只给出建议。
+我的判断是，OpenAI 的核心方向是把 ChatGPT 变成一个**通用工作操作系统**。它不只想回答你“怎么写报告”，而是想直接帮你搜资料、整理文件、写报告、生成图表、修改代码、创建 PR，并把结果放回你的工作流里。
 
-2. **从单轮对话到长任务执行**  
-   OpenAI 官方描述中强调它可以在复杂项目上持续工作数小时。这说明“长程任务”和“代理持续性”已经成为 ChatGPT 的核心卖点。
+## Anthropic：Claude 的优势在长任务、代码和安全边界
 
-3. **从开发者工具扩展到普通知识工作**  
-   ChatGPT Work 内置 Codex 技术，但目标不只是程序员，而是销售、市场、财务、运营、研究等办公室场景。
+Anthropic 当前的 Claude 模型文档已经把模型分层说得很清楚：Fable 5 面向最高能力，Opus 4.8 面向复杂 Agent coding 和企业工作，Sonnet 5 强调速度与智能的平衡，Haiku 4.5 则服务低延迟任务。Claude 主流模型支持文本、图像输入、文本输出、多语言和视觉，并通过 Claude API、AWS、Google Cloud、Microsoft Foundry 等渠道提供。
 
-这对 OpenAI 的意义很大：ChatGPT 正在从一个通用 AI 产品，变成企业工作流入口。它要竞争的对象不只是 Claude 或 Gemini，还包括 Office、Notion、Slack、Zapier、CRM 和 BI 工具里的自动化能力。
+但 Anthropic 真正的差异化，不只在模型参数，而在 Claude Code 这类工具化入口。Claude Code 官方文档明确强调几个能力：
 
-## Anthropic：Claude 的方向是“更会做事，但更强调安全边界”
+- 可以用自然语言描述任务，让 Claude 计划方案、跨文件写代码并验证结果。
+- 可以直接处理 git：暂存改动、写 commit、创建分支、打开 PR。
+- 通过 MCP 接入外部数据源和工具。
+- 通过 `CLAUDE.md`、skills、hooks 固化项目规则和团队工作流。
+- 可以运行多个 agent，把复杂任务拆给不同子任务并行处理。
 
-Anthropic 在 2026 年 6 月 30 日发布 [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)。官方定位很明确：这是最具 agentic 能力的 Sonnet 模型，可以规划、使用浏览器和终端等工具，并以更低价格接近 Opus 4.8 的部分能力。
+这说明 Anthropic 正在把 Claude 做成一种“可控的工程协作者”。它的强项不是花哨界面，而是终端、代码库、长上下文、权限、团队规则和企业工作流。
 
-Sonnet 5 的重点不是单纯“更聪明”，而是更适合规模化使用：
+对开发者来说，Claude Code 的启发很直接：以后优秀的 AI 编程体验，不是单次补全，而是模型能不能理解整个项目、持续记住项目约束、自动跑测试、解释 diff，并在关键动作前让人确认。
 
-- 对开发者来说，它更擅长多步骤编码、调试、工具调用和知识工作。
-- 对企业来说，它的成本更可控，适合放进大量业务流程。
-- 对 Anthropic 来说，它是把高阶 agent 能力下放到更普及模型层级的一步。
+## Google：Gemini 的优势是生态、媒体和工具矩阵
 
-更值得注意的是 Fable 5 和 Mythos 5 的事件。Anthropic 在 [Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5) 中披露，Fable 5 与 Mythos 5 曾因美国政府出口管制而暂停访问，随后在 2026 年 7 月 1 日恢复。官方还提到，它们为 Fable 5 加强了网络安全相关分类器，并与 Amazon、Microsoft、Google 等合作伙伴推动 jailbreak 严重程度评估框架。
+Google 的 Gemini 路线和 OpenAI、Anthropic 不完全一样。Google 不是只做一个聊天产品，它还有搜索、Chrome、Android、Workspace、YouTube、Google Cloud、AI Studio 和 Gemini API。
 
-这件事说明两个问题：
+从 Gemini API 模型页看，Google 已经把能力拆成非常完整的矩阵：
 
-第一，前沿模型已经进入政策与国家安全视野。模型发布不再只是公司内部产品节奏，而会受到政府、云厂商、企业客户和安全研究者的共同约束。
+- Gemini 3.5 Flash 等模型面向 Agent 和编码任务。
+- Gemini 2.5 Flash 继续承担高性价比、低延迟、高吞吐任务。
+- Nano Banana 2 / Lite / Pro 面向图像生成和编辑。
+- Veo 3.1、Gemini Omni Flash 面向视频生成与对话式视频编辑。
+- Computer Use Preview 可以看屏幕并执行点击、输入、导航等界面动作。
+- Antigravity Agent Preview 面向在安全 Linux 沙盒里计划、运行代码、管理文件和浏览网页的托管 Agent。
 
-第二，Anthropic 正在把“安全治理”本身变成产品能力。Claude 的竞争策略不是只强调性能，而是强调在高风险自动化场景里，模型知道什么时候该拒绝、什么时候该降级、什么时候需要人类确认。
+Google 的优势在于“模型 + 产品矩阵 + 分发渠道”。如果一个公司要做内容生产、搜索增强、实时语音、图像视频生成、浏览器自动化和企业 Agent，Google 可以用 Gemini API 与 Google Cloud 把这些能力连在一起。
 
-这对企业客户很有吸引力。因为企业真正担心的不是模型偶尔答错，而是模型在拥有工具权限后，错误地执行不可逆操作。
+我的判断是，Google 会继续把 Gemini 做成一个多模态生产底座。它的竞争力不只来自某个聊天模型，而来自把模型嵌进搜索、广告、云、Workspace、Android 和创作工具的能力。
 
-## Google：Gemini 的优势在生态嵌入和多模态生产
+## Qwen：开放权重、长上下文和工程生态
 
-Google 的大模型路线和 OpenAI、Anthropic 不完全一样。Google 不只有聊天产品，还有搜索、Chrome、Android、Workspace、YouTube、Google Cloud、AI Studio 和 Gemini API。这让 Gemini 的竞争方式更偏平台化。
+Qwen 的路线非常适合开发者和企业技术团队关注。Qwen3 官方仓库显示，Qwen3-2507 提供 Instruct 和 Thinking 两条路线，并覆盖 235B-A22B、30B-A3B、4B 等规模。它强调：
 
-2026 年 6 月 24 日，Google 发布了 [Gemini 3.5 Flash 的 computer use 能力](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)。这意味着开发者可以用 Gemini 3.5 Flash 构建能看屏幕、推理并在浏览器、移动端和桌面环境中采取行动的代理。Google 特别提到，这对持续软件测试、企业自动化和专业应用中的知识工作有价值。
+- 通用能力、指令跟随、逻辑推理、数学、科学、编码和工具使用提升。
+- 256K 长上下文，并可扩展到 100 万 token。
+- Thinking / Non-thinking 模式分离，让复杂推理和日常高效任务可以分别调度。
+- 支持 Transformers、vLLM、SGLang、llama.cpp、Ollama、ModelScope 等部署方式。
 
-这和 OpenAI 的 ChatGPT Work、Anthropic 的 Claude agent 能力是同一条主线：模型要开始操作真实软件环境。
+这说明 Qwen 的核心打法是“开放 + 工程化 + 多规模覆盖”。它不一定要在每个闭源榜单上压过 OpenAI 或 Anthropic，但它可以成为很多团队做私有化、低成本、可控部署和中文场景适配时的首选底座。
 
-但 Google 的另一个差异点在多模态。2026 年 6 月 30 日，Google 推出 [Nano Banana 2 Lite 与 Gemini Omni Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/)。前者是更快、更低成本的图像模型，后者面向视频生成和对话式视频编辑。
+## Kimi：K2 把 Agentic Intelligence 放在中心
 
-这说明 Google 正在把 Gemini 做成一个多媒体生产底座：
+Moonshot AI 的 Kimi K2 公开仓库把定位写得很明确：Kimi K2 是一个 MoE 大模型，1T 总参数、32B 激活参数，针对工具使用、推理和自主问题解决做了优化。
 
-- 文本和代码任务交给 Gemini 主模型。
-- 图像快速生成交给 Nano Banana 系列。
-- 视频生成和编辑交给 Gemini Omni。
-- 搜索、Chrome、Gemini App、Google Flow、AI Studio 和企业平台负责分发。
+它值得关注的点有三个：
 
-如果说 OpenAI 的优势是 ChatGPT 入口，Anthropic 的优势是企业级安全和编码口碑，那么 Google 的优势就是“模型 + 产品矩阵 + 分发渠道”的组合。
+1. **规模足够大。** 1T MoE 说明 Kimi 不是只做轻量聊天模型，而是进入了真正的前沿模型训练竞争。
+2. **Agent 优先。** 官方强调 agentic capabilities，评测也覆盖 SWE-bench、Tau2、AceBench 等工具调用和编码任务。
+3. **开放研究信号强。** Base 和 Instruct 版本对研究者、开发者和企业二次开发更友好。
 
-## 三家竞争的真正焦点：不是模型，而是工作流
+Kimi K2 的意义在于：国内模型公司已经不只比中文聊天体验，而是在直接进入软件工程、工具调用、Agent 任务和开放模型生态竞争。
 
-过去一年，很多人还在用“谁更强”来讨论大模型。但从这轮动态看，竞争焦点已经变化。
+## 智谱 / GLM：Agent、Reasoning、Coding 三合一
 
-### 1. Agent 成为默认方向
+智谱系 GLM 模型的公开仓库把 GLM-4.5 定位为面向智能 Agent 的基础模型，并强调 Reasoning、Coding、Agent 三类能力。后续 GLM-4.6 / GLM-4.7 又继续强化编码、工具使用、复杂推理、长上下文和前端生成质量。
 
-OpenAI 有 ChatGPT Work，Anthropic 有 Claude Sonnet 5 和 Claude Code，Google 有 Gemini 3.5 Flash computer use。三家都在做同一件事：让模型能使用工具、理解界面、分解任务、执行流程。
+特别值得注意的是“thinking before acting”这条线。GLM 文档强调模型在工具调用前思考、跨多轮保留 reasoning、按任务控制 thinking 开关。这其实是 Agent 系统里非常关键的能力：模型不是每一步都盲目调用工具，而是要在行动前形成计划，并在多轮任务里保持一致。
 
-这意味着未来的 AI 产品不会只是聊天框，而会更像“可委派的数字员工”。
+这说明智谱的重点不是只做一个聊天入口，而是把 GLM 做成能嵌入 Claude Code、Cline、Roo Code、Kilo Code 等 Agent 框架的模型底座。
 
-### 2. 成本效率比单点性能更重要
+## 真正的趋势：从模型公司到工作流公司
 
-OpenAI 用 Sol、Terra、Luna 做模型分层；Anthropic 用 Sonnet 5 接近 Opus 级能力但降低成本；Google 用 Flash、Lite、Omni Flash 区分速度、价格和质量。
+把这些动态合在一起看，AI 圈的关键词已经发生变化。
 
-这背后的逻辑是：当 AI 进入企业流程，调用次数会非常高。模型每便宜一点，都会直接影响能否规模化部署。
+过去最重要的词是：参数、榜单、上下文、推理、多模态。
 
-### 3. 安全治理开始前置
+现在更重要的词是：Agent、工具调用、权限、记忆、可审计、长任务、工作流、成本路由、私有化部署。
 
-前沿模型拥有浏览器、终端、文件、CRM、邮件和企业系统权限后，风险会明显放大。Anthropic 的 Fable 5 事件、Google 的 computer use 安全机制、OpenAI 的系统卡和分层访问策略，都说明安全不再是发布后的补丁，而是产品架构的一部分。
+这会带来几个实际变化：
 
-### 4. 多模态正在从演示走向生产
-
-Google 的 Gemini Omni Flash 和 Nano Banana 2 Lite 代表一个方向：图像、视频、文本和交互编辑会被连成完整生产链。未来内容创作不再是“先生成图片，再手动做视频”，而是一个模型管线直接完成概念、草图、画面、剪辑和版本迭代。
+- **模型会分层。** 顶级模型处理复杂规划和关键判断，便宜模型处理高频轻任务。
+- **长上下文会变成基础设施。** 代码库、企业文档、历史记录和多模态素材都需要进入上下文。
+- **Agent 会成为默认交互方式。** 用户不再满足于“给建议”，而会要求“把事做完”。
+- **开源/开放权重继续重要。** 企业需要可控部署、数据边界和成本优势。
+- **安全从附加项变成架构项。** 一个能操作文件、终端、浏览器和企业系统的模型，必须有权限、日志、确认和回滚机制。
 
 ## 对普通用户和开发者意味着什么
 
-对普通用户来说，AI 工具会越来越像“项目助理”。你不再只问它“怎么做”，而是直接说“帮我做完”。比如整理资料、写方案、生成表格、做市场分析、检查邮件、准备会议材料。
+如果你只是普通用户，接下来使用 AI 的方式会变得更像“委派任务”：让 AI 整理资料、做表格、写方案、生成幻灯片、剪视频、准备会议材料。
 
-对开发者来说，模型能力的重点会从 prompt 技巧转向系统设计：
+如果你是开发者，重点会从 prompt 技巧转向系统设计：
 
-- 如何给 agent 提供安全的工具权限？
-- 如何记录每一步操作？
-- 如何让用户批准关键动作？
-- 如何在成本、延迟和质量之间选择模型？
-- 如何避免 prompt injection 和越权操作？
+- 怎样给 Agent 提供刚好足够的上下文？
+- 怎样限制它能读写哪些文件？
+- 怎样让它每一步都留下日志？
+- 怎样让它自动跑测试，但不自动执行危险命令？
+- 怎样在 OpenAI、Claude、Gemini、Qwen、Kimi、GLM 之间按成本和任务选择模型？
+- 怎样把团队规则写进 `AGENTS.md`、`CLAUDE.md`、Cursor Rules 或内部规范？
 
-对企业来说，选型标准也会变化。以前主要看模型智商，现在要看四件事：**能否接入现有系统、能否审计、能否控权、能否稳定降本**。
-
-## 我的判断
-
-2026 年下半年的 AI 圈会沿着三条线继续推进。
-
-第一，ChatGPT、Claude、Gemini 都会继续把 agent 能力放到核心入口。谁能让用户放心地把真实工作交出去，谁就能占据下一阶段入口。
-
-第二，模型价格会继续下降，但高端模型不会消失。未来会形成“便宜模型跑常规流程，高端模型处理关键判断”的混合结构。
-
-第三，安全和监管会越来越影响发布节奏。前沿模型越接近真实世界操作能力，越不可能像普通软件一样随时全球发布。
-
-一句话总结：**AI 大模型的竞争，正在从智力竞赛变成生产系统竞赛。**
-
-真正重要的不是谁在榜单上领先一周，而是谁能把模型变成稳定、可控、可审计、可规模化的工作流基础设施。
+一句话总结：**2026 年下半年的 AI 竞争，不再只是模型智力竞赛，而是模型、工具、权限、工作流和生态的系统竞赛。**
 
 ## 参考资料
 
-- OpenAI：[GPT-5.6: Frontier intelligence that scales with your ambition](https://openai.com/index/gpt-5-6/)
-- OpenAI：[ChatGPT is now a partner for your most ambitious work](https://openai.com/index/chatgpt-for-your-most-ambitious-work/)
-- Anthropic：[Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)
-- Anthropic：[Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5)
-- Google：[Introducing computer use in Gemini 3.5 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/)
-- Google：[Start building with Nano Banana 2 Lite and Gemini Omni Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/)
+- [OpenAI / ChatGPT & Codex docs](https://developers.openai.com/codex/overview)
+- [Anthropic Claude models overview](https://docs.anthropic.com/en/docs/about-claude/models/overview)
+- [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [Google Gemini API models](https://ai.google.dev/gemini-api/docs/models)
+- [Qwen3 GitHub repository](https://github.com/QwenLM/Qwen3)
+- [Kimi K2 GitHub repository](https://github.com/MoonshotAI/Kimi-K2)
+- [GLM-4.5 / GLM-4.6 / GLM-4.7 GitHub repository](https://github.com/zai-org/GLM-4.5)
