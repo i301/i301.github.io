@@ -1,0 +1,32 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI agent control loop</title>
+  <desc id="desc">A workflow diagram showing the control loop of an AI coding agent.</desc>
+  <rect width="1600" height="980" fill="#FFFFFF"/>
+  <text x="130" y="138" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="720">Coding agent control loop</text>
+  <text x="130" y="184" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">The practical loop shared by Claude Code, Codex, Cursor Agent, Cline-style agents, and internal tools.</text>
+  <circle cx="800" cy="520" r="260" fill="#F7F7F8" stroke="#DADAE0"/>
+  <circle cx="800" cy="520" r="98" fill="#111113"/>
+  <text x="800" y="506" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="720">Human</text>
+  <text x="800" y="548" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24">review gate</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="640" y="252" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="800" y="304" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Context</text>
+    <rect x="1010" y="392" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="1170" y="444" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Plan</text>
+    <rect x="1010" y="626" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="1170" y="678" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Edit / run tools</text>
+    <rect x="640" y="752" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="800" y="804" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Test</text>
+    <rect x="270" y="626" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="430" y="678" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Diff review</text>
+    <rect x="270" y="392" width="320" height="86" rx="20" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="430" y="444" text-anchor="middle" fill="#111113" font-size="26" font-weight="700">Commit / PR</text>
+  </g>
+  <path d="M902 320C1015 346 1094 382 1134 410" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1230 478C1265 536 1265 592 1230 638" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1095 716C1031 762 966 788 922 794" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <path d="M678 794C596 780 520 746 476 708" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <path d="M370 626C338 574 338 516 370 478" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <path d="M482 392C548 346 620 322 682 318" stroke="#111113" stroke-width="3" stroke-linecap="round"/>
+  <text x="130" y="900" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="20">Key idea: AI writes and runs; humans preserve intent, boundaries, review, and accountability.</text>
+</svg>

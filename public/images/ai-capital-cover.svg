@@ -1,0 +1,29 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI capital markets research cover</title>
+  <desc id="desc">Minimal black and white research cover showing AI infrastructure flowing into global equity markets.</desc>
+  <rect width="1600" height="1000" fill="#FFFFFF"/>
+  <rect x="110" y="110" width="1380" height="780" rx="34" fill="#F7F7F8" stroke="#DADAE0"/>
+  <text x="170" y="210" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="720">AI Capital Chain</text>
+  <text x="170" y="258" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="24">Compute capex / semiconductors / optical links / equity markets</text>
+  <g stroke="#111113" stroke-width="3" stroke-linecap="round">
+    <path d="M220 720L430 560L660 620L880 430L1110 500L1360 300"/>
+    <path d="M1360 300L1320 306"/>
+    <path d="M1360 300L1344 338"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <circle cx="430" cy="560" r="54" fill="#111113"/>
+    <text x="430" y="552" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">GPU</text>
+    <text x="430" y="576" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">HBM</text>
+    <circle cx="660" cy="620" r="54" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+    <text x="660" y="614" text-anchor="middle" fill="#111113" font-size="18" font-weight="700">Server</text>
+    <text x="660" y="638" text-anchor="middle" fill="#111113" font-size="18" font-weight="700">Power</text>
+    <circle cx="880" cy="430" r="54" fill="#111113"/>
+    <text x="880" y="424" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">Optical</text>
+    <text x="880" y="448" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">Network</text>
+    <circle cx="1110" cy="500" r="54" fill="#FFFFFF" stroke="#111113" stroke-width="3"/>
+    <text x="1110" y="494" text-anchor="middle" fill="#111113" font-size="18" font-weight="700">Cloud</text>
+    <text x="1110" y="518" text-anchor="middle" fill="#111113" font-size="18" font-weight="700">AI SaaS</text>
+  </g>
+  <line x1="170" y1="808" x2="1430" y2="808" stroke="#111113" stroke-opacity="0.14"/>
+  <text x="170" y="850" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="23">A-shares / Nasdaq / semiconductors / communications / data centers</text>
+</svg>

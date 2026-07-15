@@ -1,0 +1,41 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Coding agent matrix</title>
+  <desc id="desc">A qualitative comparison matrix of Claude Code, Codex, and Cursor across workflow dimensions.</desc>
+  <rect width="1600" height="980" fill="#FFFFFF"/>
+  <text x="120" y="136" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="720">Claude Code / Codex / Cursor</text>
+  <text x="120" y="182" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">Qualitative fit matrix for everyday engineering decisions</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="120" y="244" width="1360" height="580" rx="28" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="390" y="306" text-anchor="middle" fill="#111113" font-size="28" font-weight="700">Claude Code</text>
+    <text x="800" y="306" text-anchor="middle" fill="#111113" font-size="28" font-weight="700">Codex</text>
+    <text x="1210" y="306" text-anchor="middle" fill="#111113" font-size="28" font-weight="700">Cursor</text>
+    <line x1="120" y1="336" x2="1480" y2="336" stroke="#111113" stroke-opacity="0.12"/>
+    <line x1="600" y1="244" x2="600" y2="824" stroke="#111113" stroke-opacity="0.12"/>
+    <line x1="1010" y1="244" x2="1010" y2="824" stroke="#111113" stroke-opacity="0.12"/>
+    <text x="190" y="396" fill="#67676F" font-size="22">Best fit</text>
+    <text x="390" y="396" text-anchor="middle" fill="#111113" font-size="24">Repo-level work</text>
+    <text x="800" y="396" text-anchor="middle" fill="#111113" font-size="24">Issue / PR tasks</text>
+    <text x="1210" y="396" text-anchor="middle" fill="#111113" font-size="24">Daily IDE flow</text>
+    <line x1="160" y1="430" x2="1440" y2="430" stroke="#111113" stroke-opacity="0.1"/>
+    <text x="190" y="490" fill="#67676F" font-size="22">Primary interface</text>
+    <text x="390" y="490" text-anchor="middle" fill="#111113" font-size="24">Terminal</text>
+    <text x="800" y="490" text-anchor="middle" fill="#111113" font-size="24">Task environment</text>
+    <text x="1210" y="490" text-anchor="middle" fill="#111113" font-size="24">Editor</text>
+    <line x1="160" y1="524" x2="1440" y2="524" stroke="#111113" stroke-opacity="0.1"/>
+    <text x="190" y="584" fill="#67676F" font-size="22">Strength</text>
+    <text x="390" y="584" text-anchor="middle" fill="#111113" font-size="24">Plan / test loop</text>
+    <text x="800" y="584" text-anchor="middle" fill="#111113" font-size="24">Task packaging</text>
+    <text x="1210" y="584" text-anchor="middle" fill="#111113" font-size="24">Fast edits</text>
+    <line x1="160" y1="618" x2="1440" y2="618" stroke="#111113" stroke-opacity="0.1"/>
+    <text x="190" y="678" fill="#67676F" font-size="22">Risk</text>
+    <text x="390" y="678" text-anchor="middle" fill="#111113" font-size="24">Over-permission</text>
+    <text x="800" y="678" text-anchor="middle" fill="#111113" font-size="24">Ambiguous scope</text>
+    <text x="1210" y="678" text-anchor="middle" fill="#111113" font-size="24">Context drift</text>
+    <line x1="160" y1="712" x2="1440" y2="712" stroke="#111113" stroke-opacity="0.1"/>
+    <text x="190" y="772" fill="#67676F" font-size="22">Must master</text>
+    <text x="390" y="772" text-anchor="middle" fill="#111113" font-size="24">Permissions</text>
+    <text x="800" y="772" text-anchor="middle" fill="#111113" font-size="24">Acceptance criteria</text>
+    <text x="1210" y="772" text-anchor="middle" fill="#111113" font-size="24">Rules</text>
+  </g>
+  <text x="120" y="900" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="20">This matrix is workflow-oriented, not a model benchmark.</text>
+</svg>

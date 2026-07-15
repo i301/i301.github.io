@@ -11,12 +11,12 @@ export const copy = {
   zh: {
     siteTitle: "Zhou AI Notes",
     siteDescription:
-      "聚焦大模型、AI Agent 与开发者工具的研究型博客，追踪 OpenAI、Anthropic、Google 以及国内模型公司的关键变化。",
+      "聚焦大模型、AI Agent、开发者工具与 AI 资本市场传导的研究型博客，追踪技术、产业链和资产定价的关键变化。",
     latestPosts: "AI 研究笔记",
     allPosts: "文章",
     tags: "标签",
     categories: "主题",
-    archive: "AI / Agent / 大模型",
+    archive: "AI / Agent / 资本市场",
     language: "语言",
     readMore: "阅读全文",
     draft: "草稿",
@@ -29,12 +29,12 @@ export const copy = {
   en: {
     siteTitle: "Zhou AI Notes",
     siteDescription:
-      "Research notes on frontier models, AI agents, and developer tools across OpenAI, Anthropic, Google, and Chinese AI labs.",
+      "Research notes on frontier models, AI agents, developer tools, and the capital-market transmission of AI infrastructure.",
     latestPosts: "AI Research Notes",
     allPosts: "Posts",
     tags: "Tags",
     categories: "Topics",
-    archive: "AI / Agents / Models",
+    archive: "AI / Agents / Capital",
     language: "Language",
     readMore: "Read article",
     draft: "Draft",

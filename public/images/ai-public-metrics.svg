@@ -1,0 +1,32 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Public AI model metrics</title>
+  <desc id="desc">A chart of selected public model metrics from official repositories and documentation.</desc>
+  <rect width="1600" height="980" fill="#FFFFFF"/>
+  <text x="120" y="132" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="720">Selected public metrics</text>
+  <text x="120" y="176" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">Not a benchmark ranking. Values are selected official public fields useful for architecture comparison.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="120" y="252" width="1360" height="154" rx="24" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="168" y="316" fill="#111113" font-size="30" font-weight="700">Kimi K2</text>
+    <text x="168" y="354" fill="#67676F" font-size="22">MoE model: 1T total parameters, 32B activated, 128K context</text>
+    <rect x="690" y="312" width="650" height="34" rx="17" fill="#111113"/>
+    <text x="1362" y="337" fill="#111113" font-size="20">1T total</text>
+    <rect x="690" y="358" width="210" height="20" rx="10" fill="#8F8F98"/>
+    <text x="920" y="376" fill="#67676F" font-size="18">32B activated</text>
+    <rect x="120" y="438" width="1360" height="154" rx="24" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="168" y="502" fill="#111113" font-size="30" font-weight="700">Qwen3-2507</text>
+    <text x="168" y="540" fill="#67676F" font-size="22">235B-A22B flagship line, 256K native context, extendable to 1M tokens</text>
+    <rect x="690" y="498" width="350" height="34" rx="17" fill="#111113"/>
+    <text x="1060" y="523" fill="#111113" font-size="20">235B-A22B</text>
+    <rect x="690" y="548" width="650" height="20" rx="10" fill="#8F8F98"/>
+    <text x="1362" y="566" fill="#67676F" font-size="18">up to 1M context</text>
+    <rect x="120" y="624" width="1360" height="154" rx="24" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="168" y="688" fill="#111113" font-size="30" font-weight="700">GLM-4.7</text>
+    <text x="168" y="726" fill="#67676F" font-size="22">Official release claims stronger coding, frontend generation, and agent performance over 4.6</text>
+    <rect x="690" y="682" width="480" height="26" rx="13" fill="#111113"/>
+    <text x="1190" y="704" fill="#111113" font-size="20">coding / agent uplift</text>
+    <rect x="690" y="726" width="420" height="20" rx="10" fill="#8F8F98"/>
+    <text x="1130" y="744" fill="#67676F" font-size="18">reasoning before acting</text>
+  </g>
+  <line x1="120" y1="846" x2="1480" y2="846" stroke="#111113" stroke-opacity="0.14"/>
+  <text x="120" y="890" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="20">Source basis: official model docs / GitHub repositories linked in the article. Closed-model families are analyzed by public product capability rather than parameter count.</text>
+</svg>

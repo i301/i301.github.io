@@ -17,7 +17,9 @@ draft: false
 
 这里的真实工作不只是聊天，也包括读文件、写代码、调用工具、浏览网页、控制界面、生成图片视频、维护项目上下文、在长任务中持续决策，并且在成本、权限和安全边界内完成交付。
 
-## 一句话判断
+![AI 产业格局图：海外与国内模型公司的产品方向](/images/ai-landscape-map.svg)
+
+## 核心结论
 
 截至 2026 年 7 月 15 日，我会把当前 AI 圈分成三条主线：
 
@@ -25,16 +27,31 @@ draft: false
 2. **国内模型公司正在用开放权重和高性价比抢开发者心智。** Qwen3、Kimi K2、GLM 系列都强调长上下文、工具调用、编码、推理和本地/私有化部署。
 3. **真正的护城河从模型参数转向系统能力。** 未来用户不只关心“模型聪不聪明”，而是关心它能不能接入我的资料、理解我的代码库、用我的工具、遵守我的权限、留下可审计记录，并在可接受成本内稳定完成任务。
 
+## 一张数据表看趋势
+
+下面这张表不是“谁最强”的排行榜，而是把公开资料里最能说明战略方向的字段放在一起看。闭源公司更适合看产品入口和工具链，开放权重公司更适合看参数规模、上下文、部署方式和 Agent 评测信号。
+
+| 公司 / 模型线 | 公开重点 | 代表信号 | 我的判断 |
+| --- | --- | --- | --- |
+| OpenAI | ChatGPT、Codex、Work、插件和长任务 | Codex 官方文档强调从目标出发、收集上下文、采取行动并产出结果 | 从聊天入口升级为通用工作入口 |
+| Anthropic | Claude 模型、Claude Code、MCP、安全治理 | Claude Code 支持仓库级编辑、git、PR、hooks、skills、多 agent | 终端和企业工程流是差异化 |
+| Google | Gemini API、Computer Use、媒体模型、托管 Agent | Gemini API 模型页覆盖文本、代码、图像、视频、Computer Use、Agent Preview | 生态矩阵和多模态生产链是优势 |
+| Qwen | Qwen3、开放权重、长上下文、多规模部署 | Qwen3-2507 提供 235B-A22B 等规模，256K 原生上下文，可扩展到 1M | 开源/开放权重工程底座 |
+| Kimi | Kimi K2、MoE、Agentic Intelligence | Kimi K2 公开 1T 总参数、32B 激活参数、128K 上下文 | 国内前沿模型开始正面进入 Agent coding |
+| GLM / Z.ai | Reasoning、Coding、Agent 三合一 | GLM-4.7 官方强调编码、前端生成、工具调用、复杂推理和 Agent 任务提升 | 面向 Agent 框架的基础模型底座 |
+
+![公开资料中的部分关键模型指标](/images/ai-public-metrics.svg)
+
 ## OpenAI：从 ChatGPT 到 Work / Codex 的统一入口
 
-OpenAI 最新的公开文档已经把 ChatGPT 与 Codex 放在同一个“从目标到成果”的产品叙事里。官方文档对 Codex/ChatGPT 的定位是：用户从一个目标、想法或任务开始，系统可以收集上下文、采取行动，并产出可用结果。
+OpenAI 最新公开文档已经把 ChatGPT 与 Codex 放在同一个“从目标到成果”的产品叙事里。官方对 Codex/ChatGPT 的定位是：用户从一个目标、想法或任务开始，系统可以收集上下文、采取行动，并产出可用结果。
 
 这代表 OpenAI 的重点不再只是模型本身，而是一个面向工作流的入口：
 
 - ChatGPT 仍然是最高频的人机对话入口。
 - Codex 是面向代码库、任务、PR、插件和开发流程的执行入口。
 - Work 把文件、插件、权限、长任务和可交付成果放到更广的知识工作场景里。
-- GPT-5.6 系列在官方文档中被拆成不同能力/成本档位，说明 OpenAI 希望用户按任务复杂度选择模型，而不是永远调用最贵、最强的模型。
+- GPT-5.6 系列在官方资料中被拆成不同能力/成本档位，说明 OpenAI 希望用户按任务复杂度选择模型，而不是永远调用最贵、最强的模型。
 
 这背后的产品逻辑很现实：当 AI 从“问答”进入“执行”，一次任务可能会调用模型数十次甚至上百次。此时，模型智力、延迟、价格、上下文管理和权限控制都必须一起优化。
 
@@ -42,7 +59,7 @@ OpenAI 最新的公开文档已经把 ChatGPT 与 Codex 放在同一个“从目
 
 ## Anthropic：Claude 的优势在长任务、代码和安全边界
 
-Anthropic 当前的 Claude 模型文档已经把模型分层说得很清楚：Fable 5 面向最高能力，Opus 4.8 面向复杂 Agent coding 和企业工作，Sonnet 5 强调速度与智能的平衡，Haiku 4.5 则服务低延迟任务。Claude 主流模型支持文本、图像输入、文本输出、多语言和视觉，并通过 Claude API、AWS、Google Cloud、Microsoft Foundry 等渠道提供。
+Anthropic 当前的 Claude 模型文档把模型分层说得很清楚：Fable 5 面向最高能力，Opus 4.8 面向复杂 Agent coding 和企业工作，Sonnet 5 强调速度与智能的平衡，Haiku 4.5 则服务低延迟任务。Claude 主流模型支持文本、图像输入、文本输出、多语言和视觉，并通过 Claude API、AWS、Google Cloud、Microsoft Foundry 等渠道提供。
 
 但 Anthropic 真正的差异化，不只在模型参数，而在 Claude Code 这类工具化入口。Claude Code 官方文档明确强调几个能力：
 
@@ -60,7 +77,7 @@ Anthropic 当前的 Claude 模型文档已经把模型分层说得很清楚：Fa
 
 Google 的 Gemini 路线和 OpenAI、Anthropic 不完全一样。Google 不是只做一个聊天产品，它还有搜索、Chrome、Android、Workspace、YouTube、Google Cloud、AI Studio 和 Gemini API。
 
-从 Gemini API 模型页看，Google 已经把能力拆成非常完整的矩阵：
+从 Gemini API 模型页看，Google 已经把能力拆成完整矩阵：
 
 - Gemini 3.5 Flash 等模型面向 Agent 和编码任务。
 - Gemini 2.5 Flash 继续承担高性价比、低延迟、高吞吐任务。
@@ -103,6 +120,21 @@ Kimi K2 的意义在于：国内模型公司已经不只比中文聊天体验，
 特别值得注意的是“thinking before acting”这条线。GLM 文档强调模型在工具调用前思考、跨多轮保留 reasoning、按任务控制 thinking 开关。这其实是 Agent 系统里非常关键的能力：模型不是每一步都盲目调用工具，而是要在行动前形成计划，并在多轮任务里保持一致。
 
 这说明智谱的重点不是只做一个聊天入口，而是把 GLM 做成能嵌入 Claude Code、Cline、Roo Code、Kilo Code 等 Agent 框架的模型底座。
+
+## 战略分歧：闭源入口 vs 开放底座
+
+这一轮 AI 竞争出现了两种不同打法。
+
+第一种是**闭源入口型**。OpenAI、Anthropic、Google 都在强化自家入口：ChatGPT、Claude、Gemini、Codex、Claude Code、Google AI Studio / Cloud。它们的优势是体验完整、权限体系清楚、模型和产品迭代同步，适合直接接企业工作流。
+
+第二种是**开放底座型**。Qwen、Kimi、GLM 的价值在于可部署、可适配、可控成本、可二次开发。对国内企业、私有化场景、低成本推理和中文业务来说，这条路线很现实。
+
+| 路线 | 优势 | 风险 | 更适合 |
+| --- | --- | --- | --- |
+| 闭源入口型 | 体验完整、模型更新快、工具链成熟 | 成本、供应商锁定、数据边界 | 通用办公、个人生产力、企业 SaaS、快速落地 |
+| 开放底座型 | 私有化、成本可控、可微调、可嵌入内部系统 | 工程门槛更高、需要维护推理栈 | 企业内网、行业模型、本地部署、中文场景 |
+
+真正成熟的企业策略通常不是二选一，而是混合：高价值复杂任务使用闭源强模型，常规高频任务使用开放权重模型，敏感数据和内部流程优先走私有化部署。
 
 ## 真正的趋势：从模型公司到工作流公司
 

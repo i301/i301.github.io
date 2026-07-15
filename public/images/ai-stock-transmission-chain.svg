@@ -1,0 +1,47 @@
+<svg width="1600" height="1040" viewBox="0 0 1600 1040" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI infrastructure to equity market transmission chain</title>
+  <desc id="desc">A diagram showing how AI demand transmits into capex, supply chains, corporate profits, and equity valuations.</desc>
+  <rect width="1600" height="1040" fill="#FFFFFF"/>
+  <text x="110" y="126" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="720">AI wave transmission chain</text>
+  <text x="110" y="172" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">From model demand to capital expenditure, supply-chain revenue, profit confirmation, and market valuation.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="110" y="248" width="250" height="132" rx="22" fill="#111113"/>
+    <text x="235" y="304" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">AI demand</text>
+    <text x="235" y="342" text-anchor="middle" fill="#FFFFFF" font-size="18">training / inference</text>
+    <rect x="430" y="248" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="555" y="304" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Cloud capex</text>
+    <text x="555" y="342" text-anchor="middle" fill="#67676F" font-size="18">data centers</text>
+    <rect x="750" y="248" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="875" y="304" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Compute stack</text>
+    <text x="875" y="342" text-anchor="middle" fill="#67676F" font-size="18">GPU / ASIC / HBM</text>
+    <rect x="1070" y="248" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="1195" y="304" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Network stack</text>
+    <text x="1195" y="342" text-anchor="middle" fill="#67676F" font-size="18">switch / optics</text>
+    <rect x="110" y="510" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="235" y="566" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Manufacturing</text>
+    <text x="235" y="604" text-anchor="middle" fill="#67676F" font-size="18">foundry / packaging</text>
+    <rect x="430" y="510" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="555" y="566" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Infrastructure</text>
+    <text x="555" y="604" text-anchor="middle" fill="#67676F" font-size="18">power / cooling / IDC</text>
+    <rect x="750" y="510" width="250" height="132" rx="22" fill="#F7F7F8" stroke="#DADAE0"/>
+    <text x="875" y="566" text-anchor="middle" fill="#111113" font-size="24" font-weight="700">Application</text>
+    <text x="875" y="604" text-anchor="middle" fill="#67676F" font-size="18">Copilot / agents</text>
+    <rect x="1070" y="510" width="250" height="132" rx="22" fill="#111113"/>
+    <text x="1195" y="566" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">Equity pricing</text>
+    <text x="1195" y="604" text-anchor="middle" fill="#FFFFFF" font-size="18">EPS / FCF / multiples</text>
+  </g>
+  <g stroke="#111113" stroke-width="3" stroke-linecap="round">
+    <path d="M360 314H430"/>
+    <path d="M680 314H750"/>
+    <path d="M1000 314H1070"/>
+    <path d="M1195 380V450C1195 488 1160 510 1118 510"/>
+    <path d="M750 314H235C196 314 180 350 180 390V510"/>
+    <path d="M555 380V510"/>
+    <path d="M680 576H750"/>
+    <path d="M1000 576H1070"/>
+  </g>
+  <text x="110" y="760" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Reading order</text>
+  <text x="110" y="804" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">1. Demand must become capex. 2. Capex must become supplier revenue. 3. Revenue must become durable margin and cash flow. 4. Valuation must not over-discount perfection.</text>
+  <line x1="110" y1="870" x2="1490" y2="870" stroke="#111113" stroke-opacity="0.14"/>
+  <text x="110" y="918" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="20">This framework is for long-cycle research, not short-term trading signals.</text>
+</svg>

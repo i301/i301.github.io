@@ -1,0 +1,44 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI landscape map</title>
+  <desc id="desc">A minimal map comparing overseas and Chinese AI labs across models, agents, multimodal systems, and open weights.</desc>
+  <rect width="1600" height="980" fill="#FFFFFF"/>
+  <rect x="100" y="88" width="1400" height="804" rx="30" fill="#F7F7F8" stroke="#DADAE0"/>
+  <text x="150" y="160" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="720">AI landscape, July 2026</text>
+  <text x="150" y="204" fill="#67676F" font-family="Inter, Arial, sans-serif" font-size="22">Publicly documented product directions and model-family signals</text>
+  <line x1="150" y1="254" x2="1450" y2="254" stroke="#111113" stroke-opacity="0.14"/>
+  <text x="150" y="310" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Overseas labs</text>
+  <text x="855" y="310" fill="#111113" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Chinese labs</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="150" y="350" width="620" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="190" y="405" fill="#111113" font-size="30" font-weight="700">OpenAI</text>
+    <text x="190" y="442" fill="#67676F" font-size="22">ChatGPT + Codex + Work + plugins</text>
+    <rect x="150" y="496" width="620" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="190" y="551" fill="#111113" font-size="30" font-weight="700">Anthropic</text>
+    <text x="190" y="588" fill="#67676F" font-size="22">Claude models + Claude Code + MCP</text>
+    <rect x="150" y="642" width="620" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="190" y="697" fill="#111113" font-size="30" font-weight="700">Google</text>
+    <text x="190" y="734" fill="#67676F" font-size="22">Gemini API + media + Computer Use</text>
+    <rect x="855" y="350" width="595" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="895" y="405" fill="#111113" font-size="30" font-weight="700">Qwen</text>
+    <text x="895" y="442" fill="#67676F" font-size="22">Qwen3 family, open weights, long context</text>
+    <rect x="855" y="496" width="595" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="895" y="551" fill="#111113" font-size="30" font-weight="700">Kimi</text>
+    <text x="895" y="588" fill="#67676F" font-size="22">Kimi K2, MoE, agentic coding</text>
+    <rect x="855" y="642" width="595" height="118" rx="20" fill="#FFFFFF" stroke="#DADAE0"/>
+    <text x="895" y="697" fill="#111113" font-size="30" font-weight="700">GLM / Z.ai</text>
+    <text x="895" y="734" fill="#67676F" font-size="22">Reasoning + coding + agent base model</text>
+  </g>
+  <line x1="810" y1="342" x2="810" y2="772" stroke="#111113" stroke-opacity="0.12"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="20" font-weight="650">
+    <rect x="150" y="812" width="230" height="44" rx="22" fill="#111113"/>
+    <text x="265" y="841" text-anchor="middle" fill="#FFFFFF">Agent systems</text>
+    <rect x="402" y="812" width="230" height="44" rx="22" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="517" y="841" text-anchor="middle" fill="#111113">Long context</text>
+    <rect x="654" y="812" width="230" height="44" rx="22" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="769" y="841" text-anchor="middle" fill="#111113">Tool calling</text>
+    <rect x="906" y="812" width="230" height="44" rx="22" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="1021" y="841" text-anchor="middle" fill="#111113">Multimodal</text>
+    <rect x="1158" y="812" width="292" height="44" rx="22" fill="#FFFFFF" stroke="#CFCFD6"/>
+    <text x="1304" y="841" text-anchor="middle" fill="#111113">Open / deployable weights</text>
+  </g>
+</svg>
