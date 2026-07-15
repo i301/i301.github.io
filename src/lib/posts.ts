@@ -4,7 +4,7 @@ import type { Lang } from "./i18n";
 export type Post = CollectionEntry<"posts">;
 
 function isPublished(post: Post): boolean {
-  return import.meta.env.DEV || !post.data.draft;
+  return !post.data.draft;
 }
 
 function byNewest(a: Post, b: Post): number {

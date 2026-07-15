@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Book note cover</title>
+  <desc id="desc">A minimalist book-inspired cover.</desc>
+  <rect width="1200" height="675" fill="#f4efe5"/>
+  <path d="M248 92h704v491H248z" fill="#fffaf0" stroke="#d6cbb9" stroke-width="2"/>
+  <path d="M600 92v491" stroke="#d6cbb9" stroke-width="2"/>
+  <path d="M316 178h206M316 228h164M316 278h226M678 178h206M678 228h154M678 278h198" stroke="#20201c" stroke-width="14" stroke-linecap="round"/>
+  <path d="M316 426h138M678 426h138" stroke="#8f5339" stroke-width="28" stroke-linecap="round"/>
+  <path d="M248 583c88-34 199-34 352 0 153-34 264-34 352 0" fill="none" stroke="#b9aa97" stroke-width="3"/>
+</svg>

@@ -12,6 +12,8 @@ const { lang, posts } = Astro.props;
 const t = copy[lang];
 const categories = Array.from(new Set(posts.map((post) => post.data.category)));
 const tags = Array.from(new Set(posts.flatMap((post) => post.data.tags)));
+const featured = posts[0];
+const listPosts = featured ? posts.slice(1) : posts;
 ---
 
 <section class="page-heading">
@@ -21,6 +23,24 @@ const tags = Array.from(new Set(posts.flatMap((post) => post.data.tags)));
   </div>
   <p>{t.siteDescription}</p>
 </section>
+
+{
+  featured && (
+    <section class="featured-note" aria-labelledby="featured-title">
+      <div class="featured-note__media">
+        {featured.data.cover && <img src={featured.data.cover} alt="" loading="eager" />}
+      </div>
+      <div class="featured-note__content">
+        <p class="eyebrow">{featured.data.category}</p>
+        <h2 id="featured-title">
+          <a href={`/${featured.data.lang}/posts/${featured.data.slug}/`}>{featured.data.title}</a>
+        </h2>
+        <p>{featured.data.description}</p>
+        <a class="read-link" href={`/${featured.data.lang}/posts/${featured.data.slug}/`}>{t.readMore}</a>
+      </div>
+    </section>
+  )
+}
 
 <div class="index-shell">
   <aside class="index-aside" aria-label={t.archive}>
@@ -46,8 +66,8 @@ const tags = Array.from(new Set(posts.flatMap((post) => post.data.tags)));
 
   <section class="post-list" aria-label={t.latestPosts}>
     {
-      posts.length > 0 ? (
-        posts.map((post, index) => <PostCard post={post} lang={lang} index={index + 1} />)
+      listPosts.length > 0 ? (
+        listPosts.map((post, index) => <PostCard post={post} lang={lang} index={index + 1} />)
       ) : (
         <p>{t.noPosts}</p>
       )

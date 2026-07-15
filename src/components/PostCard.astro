@@ -17,7 +17,7 @@ const t = copy[lang];
     <div class="post-card__topline">
       {index && <span class="post-number">{String(index).padStart(2, "0")}</span>}
       <div class="post-card__signals">
-        <span>{post.data.category}</span>
+        <span class="category-chip">{post.data.category}</span>
         <span class="lang-chip">{post.data.lang.toUpperCase()}</span>
       </div>
     </div>

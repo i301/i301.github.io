@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Film note cover</title>
+  <desc id="desc">A minimalist cinema-inspired cover.</desc>
+  <rect width="1200" height="675" fill="#11110f"/>
+  <rect x="84" y="76" width="1032" height="523" rx="8" fill="#1b1a17" stroke="#4a4035" stroke-width="2"/>
+  <path d="M84 202h1032M84 473h1032" stroke="#4a4035" stroke-width="2"/>
+  <circle cx="322" cy="338" r="116" fill="#c16f4f" opacity=".88"/>
+  <circle cx="322" cy="338" r="54" fill="#11110f"/>
+  <path d="M502 271h378M502 326h302M502 381h424" stroke="#f2eadb" stroke-width="18" stroke-linecap="round"/>
+  <path d="M954 112v451" stroke="#c16f4f" stroke-width="3"/>
+  <path d="M984 112v451" stroke="#f2eadb" stroke-width="3" opacity=".55"/>
+</svg>

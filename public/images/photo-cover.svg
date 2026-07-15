@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Photography note cover</title>
+  <desc id="desc">A minimalist photography-inspired cover.</desc>
+  <rect width="1200" height="675" fill="#f5f0e7"/>
+  <rect x="128" y="88" width="944" height="499" rx="10" fill="#fffcf4" stroke="#d7cdbf" stroke-width="2"/>
+  <rect x="196" y="146" width="338" height="383" fill="#e7ddcf"/>
+  <path d="M196 146h338v383H196z" fill="none" stroke="#b9ad9c" stroke-width="2"/>
+  <path d="M228 497 484 178" stroke="#fff8e9" stroke-width="54" stroke-linecap="round" opacity=".82"/>
+  <circle cx="741" cy="328" r="116" fill="none" stroke="#20201c" stroke-width="26"/>
+  <circle cx="741" cy="328" r="36" fill="#20201c"/>
+  <path d="M890 238h96M890 286h64M890 382h118M890 430h74" stroke="#315f58" stroke-width="14" stroke-linecap="round"/>
+</svg>
